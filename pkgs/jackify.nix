@@ -5,13 +5,13 @@
 }:
 
 let
-  version = "0.1.6.6";
+  version = "0.1.7.1";
   pname = "Jackify";
   id = "com.jackify.app";
 
   src = fetchurl {
     url = "https://github.com/Omni-guides/Jackify/releases/download/v${version}/${pname}.AppImage";
-    hash = "sha256:e012ea866642fe5b689b4ad3cc9a5852f1dd9fa5b35304b8518a3d4d90211412";
+    hash = "sha256:1cca37226fb96790ab14078d1aacd4b7e264addd9cd22ec19d386a927610e2f5";
   };
 
   appimageContents = appimageTools.extract { inherit pname version src; };
