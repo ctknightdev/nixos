@@ -6,7 +6,5 @@
     ./vscode.nix
     ./zed.nix
     ./jetbrains.nix
-
-    # ./obsidian.nix
   ];
 }

@@ -51,7 +51,6 @@ in
         "launcher"
         "toggle"
       ];
-      #    "super+Control+Return".action = spawn ["noctalia-shell" "ipc" "call" "globalIPC" "toggleLauncher"];
       # Quickshell Keybinds End
 
       "xf86audioraisevolume".action = volume-up;
@@ -60,9 +59,6 @@ in
       "xf86audioplay".action = media-play-pause;
       "xf86audionext".action = media-next;
       "xf86audioprev".action = media-previous;
-
-      #    "control+super+xf86audioraisevolume".action = spawn "brightness" "up";
-      #    "control+super+xf86audiolowervolume".action = spawn "brightness" "down";
 
       "super+q".action = close-window;
       "super+b".action = spawn apps.browser;
@@ -80,9 +76,7 @@ in
       "super+f".action = fullscreen-window;
       "super+t".action = toggle-window-floating;
 
-      # "control+shift+1".action = screenshot;
       "control+shift+1".action.screenshot = [ ];
-      # "control+shift+2".action = screenshot-window { write-to-disk = true; };
       "control+shift+2".action.screenshot-window = [ ];
 
       "super+Left".action = focus-column-left;
