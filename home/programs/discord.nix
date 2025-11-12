@@ -7,10 +7,6 @@
   services.arrpc.enable = true;
 
   home.packages = with pkgs; [
-    #    webcord
-    #    legcord
-    #    vencord
-    #    discord
     discord-ptb # Used for completing Discord quests
   ];
 

@@ -6,9 +6,6 @@
 }:
 
 {
-  #  home.packages = (
-  #    with pkgs; [ inputs.zen-browser.packages."${system}".default ]
-  #  );
   imports = [
     inputs.zen-browser.homeModules.beta
   ];

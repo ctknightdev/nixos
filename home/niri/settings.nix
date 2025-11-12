@@ -100,11 +100,6 @@
         };
       };
 
-      #      cursor = {
-      #        size = 24;
-      #        theme = "catppuccin-mocha-dark-cursors";
-      #      };
-
       environment = {
         CLUTTER_BACKEND = "wayland";
         GDK_BACKEND = "wayland,x11";
