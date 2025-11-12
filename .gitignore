@@ -1,0 +1,4 @@
+.env
+.direnv
+.sops.yaml
+secrets
