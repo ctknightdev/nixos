@@ -53,6 +53,7 @@
     direnv # Shell extension managing environment variables
     base16-schemes # Themeing
     ddcutil
+    localsend # AirDrop alternative
 
     # Local AI
     koboldcpp # AI
