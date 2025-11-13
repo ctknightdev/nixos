@@ -1,6 +1,7 @@
 {
   pkgs,
   inputs,
+  config,
   ...
 }:
 
@@ -40,6 +41,7 @@ in
 
   home.sessionVariables = {
     EDITOR = "hx";
+    FLAKE = "/home/${config.home.username}/nixos";
 
     # Cursor vars for xwayland
     XCURSOR_THEME = cursorName;
