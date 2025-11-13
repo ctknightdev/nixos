@@ -13,6 +13,7 @@
     "${self}/system/greeter/greetd.nix"
     "${self}/system/programs/lact.nix"
     "${self}/system/programs/nix-ld.nix"
+    "${self}/system/programs/obs.nix"
     "${self}/system/programs/steam.nix"
     "${self}/system/programs/stylix.nix"
     "${self}/system/services/flatpak.nix"

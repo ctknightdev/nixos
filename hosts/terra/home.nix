@@ -26,7 +26,6 @@ in
     ../../home/programs/fastfetch.nix
     ../../home/programs/ghostty.nix
     ../../home/programs/mangohud.nix
-    ../../home/programs/obs.nix
 
     ../../system/shell/zsh.nix
 
