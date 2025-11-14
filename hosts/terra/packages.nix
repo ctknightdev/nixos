@@ -38,6 +38,8 @@ with pkgs;
   _2048-in-terminal
   vitetris
   nethack
+  chess-tui # Needs a chess engine to accompany for computer games
+  stockfish # Chess Engine
 
   # TUI
   btop
