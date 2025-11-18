@@ -25,6 +25,7 @@
           "eimadpbcbfnmbkopoojfekhnkhdbieeh" # Dark Reader
           "ghmbeldphafepmbegfdlkpapadhbakde" # Proton Pass
           "mnjggcdmjocbbbhaepdhchncahnbgone" # SponsorBlock
+          "aeblfdkhhhdcdjpifhhbdiojplfjncoa" # 1Password
         ];
       in
       builtins.map (id: { inherit id; }) ids;

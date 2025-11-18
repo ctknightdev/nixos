@@ -89,6 +89,7 @@
           "addon@darkreader.org" = "darkreader";
           "78272b6fa58f4a1abaac99321d503a20@proton.me" = "proton-pass";
           "sponsorBlocker@ajay.app" = "sponsorblock";
+          "{d634138d-c276-4fc8-924b-40a0ea21d284}" = "1password-x-password-manager";
         };
         Preferences = mkLockedAttrs {
           "browser.tabs.warnOnClose" = false;

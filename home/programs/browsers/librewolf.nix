@@ -14,6 +14,7 @@
           darkreader
           proton-pass
           sponsorblock
+          onepassword-password-manager
         ];
       };
     };

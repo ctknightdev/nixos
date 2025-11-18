@@ -11,6 +11,7 @@
   imports = [
     ./hardware-configuration.nix
     "${self}/system/greeter/greetd.nix"
+    "${self}/system/programs/1password.nix"
     "${self}/system/programs/lact.nix"
     "${self}/system/programs/nix-ld.nix"
     "${self}/system/programs/obs.nix"

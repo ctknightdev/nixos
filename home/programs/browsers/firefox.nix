@@ -17,6 +17,7 @@
           darkreader
           sponsorblock
           ublock-origin
+          onepassword-password-manager
         ];
 
         settings = {
