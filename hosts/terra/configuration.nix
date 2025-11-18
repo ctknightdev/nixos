@@ -18,6 +18,7 @@
     "${self}/system/programs/steam.nix"
     "${self}/system/programs/stylix.nix"
     "${self}/system/services/flatpak.nix"
+    "${self}/system/services/keyring.nix"
     "${self}/system/services/streaming.nix"
     "${self}/system/services/disable-usb-wakeup.nix"
     "${self}/system/services/virtualization.nix"
