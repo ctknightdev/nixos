@@ -67,11 +67,11 @@ in
       "super+E".action = spawn apps.fileManager;
 
       # Tested with ghostty and kitty
-      "super+m".action = spawn apps.terminal [
-        "--title=spotify_player"
-        "-e"
-        "spotify_player"
-      ];
+      # "super+m".action = spawn apps.terminal [
+      #   "--title=spotify_player"
+      #   "-e"
+      #   "spotify_player"
+      # ];
 
       "super+f".action = fullscreen-window;
       "super+t".action = toggle-window-floating;
