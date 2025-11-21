@@ -13,6 +13,7 @@
   programs.nixcord = {
     enable = true;
     discord.enable = false;
+
     vesktop.enable = true;
     vesktop.useSystemVencord = false;
 
@@ -99,13 +100,14 @@
         messageLinkEmbeds.enable = true;
         messageLogger.enable = true;
         messageTags.enable = true;
-        moreCommands.enable = true;
-        moreKaomoji.enable = true;
-        moreUserTags.enable = true;
+        # moreCommands.enable = true;
+        # moreKaomoji.enable = true;
+        # moreUserTags.enable = true;
         mutualGroupDMs.enable = true;
         newGuildSettings = {
           enable = true;
-          messages = "only@Mentions";
+          # Values: 0 = All messages, 1 = Only @mentions, 2 = Nothing, 3 = Server default'';
+          messages = 1;
           role = false;
         };
         noBlockedMessages.enable = true;
@@ -144,7 +146,8 @@
         showConnections.enable = true;
         showHiddenChannels = {
           enable = true;
-          showMode = "muted";
+          # Values: 0 = Lock Icon replacing channel icon, 2 = Eye icon on the right, 1 = Lock icon on the right
+          showMode = 0;
         };
         showHiddenThings.enable = true;
         showTimeoutDuration.enable = true;
