@@ -8,7 +8,7 @@
     QT_QPA_PLATFORM = "wayland";
   };
 
-  security.sudo.enable = true;
+  security.sudo.enable = false;
   security.doas = {
     enable = true;
     extraRules = [
