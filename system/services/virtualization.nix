@@ -22,6 +22,7 @@
     podman
     podman-compose
     podman-tui
+    podman-desktop
 
     # QEMU-based virtualization tools
     qemu
