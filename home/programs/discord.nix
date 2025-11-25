@@ -39,18 +39,18 @@
         betterSettings.enable = true;
         betterUploadButton.enable = true;
         biggerStreamPreview.enable = true;
-        blurNSFW.enable = true;
+        blurNsfw.enable = true;
         callTimer = {
           enable = true;
           format = "human";
         };
-        clearURLs.enable = true;
+        clearUrLs.enable = true;
         colorSighted.enable = true;
         consoleJanitor.enable = true;
         consoleShortcuts.enable = true;
         copyEmojiMarkdown.enable = true;
         copyFileContents.enable = true;
-        copyUserURLs.enable = true;
+        copyUserUrLs.enable = true;
         customRPC = {
           enable = false; # TODO
         };
