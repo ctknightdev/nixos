@@ -42,6 +42,19 @@
       openFirewall = true;
       group = "media";
     };
+    tautulli = {
+      enable = true;
+      openFirewall = true;
+      group = "media";
+    };
+    # slskd = {
+    #   enable = true;
+    #   openFirewall = true;
+    #   group = "media";
+    #   domain = "127.0.0.1";
+    #   environmentFile = "/etc/slskd.env";
+
+    # };
   };
 
   environment.systemPackages = with pkgs; [
@@ -49,5 +62,9 @@
     jellyfin-web
     jellyfin-ffmpeg
     protonvpn-gui
+
+    nicotine-plus # Soulseek client
+    picard # MusicBrainz tagger
+    yt-dlp # YouTube Downloader
   ];
 }
