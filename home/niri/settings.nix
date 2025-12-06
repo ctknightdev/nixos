@@ -80,7 +80,7 @@
           };
           scale = 1.0;
           position = {
-            x = 1920;
+            x = 0;
             y = 0;
           };
           variable-refresh-rate = true; # on-demand=true
@@ -93,8 +93,9 @@
             refresh = 60.000;
           };
           scale = 1.0;
+          transform.rotation = 90;
           position = {
-            x = 0;
+            x = 3840;
             y = 0;
           };
         };
