@@ -86,6 +86,7 @@ with pkgs;
   zoxide # better `cd`
   lolcat # make terminal commands pretty
   cmatrix # fun matrix effect
+  dysk # Better disk space analyzer
 
   # Charm apps (https://charm.land/apps)
   vhs # turn commands into gifs
