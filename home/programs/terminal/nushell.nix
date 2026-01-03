@@ -40,7 +40,8 @@
         # Sets `nix` to use nushell instead of bash
         source nix-your-shell.nu
 
-        use ~/.cache/starship/init.nu
+        mkdir ($nu.data-dir | path join "vendor/autoload")
+        starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
       '';
       shellAliases = {
         vi = "hx";
