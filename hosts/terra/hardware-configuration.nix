@@ -13,6 +13,26 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
+  # Games SSD
+  fileSystems."/games" = {
+    device = "/dev/disk/by-uuid/cfdba3e5-c7e9-4607-b4b2-740c8b3c0914";
+    fsType = "btrfs";
+    options = [
+      "compress=zstd"
+      "noatime"
+    ];
+  };
+
+  # Hard Drive
+  fileSystems."/data" = {
+    device = "/dev/disk/by-uuid/2015e20d-ed0b-4273-a329-3822ec0582d9";
+    fsType = "btrfs";
+    options = [
+      "compress=zstd"
+      "noatime"
+    ];
+  };
+
   boot.initrd.availableKernelModules = [
     "nvme"
     "xhci_pci"
@@ -27,99 +47,6 @@
     "hid_sony"
   ];
   boot.extraModulePackages = [ ];
-
-  fileSystems."/" = {
-    device = "/dev/disk/by-uuid/24cb5cf5-fda4-411d-8a4f-9db7e551b792";
-    fsType = "btrfs";
-    options = [
-      "subvol=root"
-      "compress=zstd"
-      "noatime"
-    ];
-  };
-
-  fileSystems."/home" = {
-    device = "/dev/disk/by-uuid/24cb5cf5-fda4-411d-8a4f-9db7e551b792";
-    fsType = "btrfs";
-    options = [
-      "subvol=home"
-      "compress=zstd"
-      "noatime"
-    ];
-  };
-
-  fileSystems."/nix" = {
-    device = "/dev/disk/by-uuid/24cb5cf5-fda4-411d-8a4f-9db7e551b792";
-    fsType = "btrfs";
-    options = [
-      "subvol=nix"
-      "compress=zstd"
-      "noatime"
-    ];
-  };
-
-  fileSystems."/persist" = {
-    device = "/dev/disk/by-uuid/24cb5cf5-fda4-411d-8a4f-9db7e551b792";
-    fsType = "btrfs";
-    options = [
-      "subvol=persist"
-      "compress=zstd"
-      "noatime"
-    ];
-    neededForBoot = true;
-  };
-
-  fileSystems."/var/log" = {
-    device = "/dev/disk/by-uuid/24cb5cf5-fda4-411d-8a4f-9db7e551b792";
-    fsType = "btrfs";
-    options = [
-      "subvol=log"
-      "compress=zstd"
-      "noatime"
-    ];
-    neededForBoot = true;
-  };
-
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/4F21-FEAF";
-    fsType = "vfat";
-    options = [
-      "fmask=0022"
-      "dmask=0022"
-    ];
-  };
-
-  # Second SSD
-  fileSystems."/games" = {
-    device = "/dev/disk/by-uuid/cfdba3e5-c7e9-4607-b4b2-740c8b3c0914";
-    fsType = "btrfs";
-    options = [
-      "compress=zstd"
-      "noatime"
-    ];
-  };
-
-  # Hard drive
-  fileSystems."/data" = {
-    device = "/dev/disk/by-uuid/2015e20d-ed0b-4273-a329-3822ec0582d9";
-    fsType = "btrfs";
-    options = [
-      "compress=zstd"
-      "noatime"
-    ];
-  };
-
-  swapDevices = [
-    { device = "/dev/disk/by-uuid/6a8d28bf-2261-4ab5-b8ae-e62514d0623f"; }
-  ];
-
-  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-  # (the default) this is the recommended approach. When using systemd-networkd it's
-  # still possible to use this option, but it's recommended to use it in conjunction
-  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp5s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlp6s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
