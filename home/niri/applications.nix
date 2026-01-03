@@ -6,7 +6,7 @@
   #  browser = "${pkgs.firefox}/bin/firefox";
   browser = "zen";
   terminal = "${pkgs.ghostty}/bin/ghostty";
-  fileManager = "${pkgs.xfce.thunar}/bin/thunar";
+  fileManager = "${pkgs.thunar}/bin/thunar";
   appLauncher = "${pkgs.walker}/bin/walker";
 
   screenshotArea = "${pkgs.bash}/bin/bash -c '${pkgs.grim}/bin/grim -g \"\\\$(${pkgs.slurp}/bin/slurp)\" - | ${pkgs.wl-clipboard}/bin/wl-copy'";
