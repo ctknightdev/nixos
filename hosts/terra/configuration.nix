@@ -102,15 +102,15 @@
     supportedFilesystems = [ "btrfs" ];
     #    kernelPackages = pkgs.linuxPackages_zen;
     #    kernelPackages = pkgs.linuxPackages_cachyos;
-    #    initrd = {
+       initrd = {
     #      luks.devices = {
     #        root = {
     #          device = "/dev/disk/by-uuid/dddd0efc-2082-4af1-981d-998a19c607d3";
     #          preLVM = true;
     #        };
     #      };
-    #      systemd.enable = true;
-    #    };
+         systemd.enable = true;
+       };
     # Needed for Star Citizen
     kernel.sysctl = {
       "vm.max_map_count" = 16777216;
