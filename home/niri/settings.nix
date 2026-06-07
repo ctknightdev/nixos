@@ -97,7 +97,7 @@
             refresh = 60.000;
           };
           scale = 1.0;
-          transform.rotation = 90;
+          # transform.rotation = 90;
           position = {
             x = 3840;
             y = 0;
