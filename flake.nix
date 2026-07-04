@@ -24,6 +24,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    matcha = {
+      url = "github:floatpane/matcha";
+      # inputs.nixpkgs.follows = "nixpkgs";
+    };
     matugen.url = "github:InioX/matugen";
 
     niri.url = "github:sodiboo/niri-flake";
@@ -50,7 +54,7 @@
     nix-minecraft.url = "github:Infinidoge/nix-minecraft";
 
     noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
+      url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -110,10 +114,10 @@
                 enable = true;
                 args = [
                   "-f"
-                  "-w 3840"
-                  "-h 1600"
-                  "-W 3840"
-                  "-H 1600"
+                  "-w 2560"
+                  "-h 1440"
+                  "-W 2560"
+                  "-H 1440"
                   "--force-grab-cursor"
                 ];
               };
