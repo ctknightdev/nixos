@@ -78,16 +78,16 @@
       outputs = {
         "DP-2" = {
           mode = {
-            width = 3840;
-            height = 1600;
-            refresh = 143.998;
+            width = 2560;
+            height = 1440;
+            refresh = 279.961;
           };
           scale = 1.0;
           position = {
             x = 0;
             y = 0;
           };
-          variable-refresh-rate = true; # on-demand=true
+          variable-refresh-rate = false; # on-demand=true
           focus-at-startup = true;
         };
         "HDMI-A-1" = {
@@ -99,7 +99,7 @@
           scale = 1.0;
           # transform.rotation = 90;
           position = {
-            x = 3840;
+            x = 2560;
             y = 0;
           };
         };
