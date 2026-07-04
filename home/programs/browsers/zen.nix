@@ -53,9 +53,9 @@
     enable = true;
     setAsDefaultBrowser = true;
 
-    nativeMessagingHosts = [
-      pkgs.firefoxpwa
-    ];
+    # nativeMessagingHosts = [
+    #   pkgs.firefoxpwa
+    # ];
 
     policies =
       let
@@ -96,9 +96,9 @@
           "sponsorBlocker@ajay.app" = "sponsorblock";
           "{d634138d-c276-4fc8-924b-40a0ea21d284}" = "1password-x-password-manager";
           # "{446900e4-71c2-419f-a6a7-df9c091e268b}" = "bitwarden";
-          "search@kagi.com" = "kagi-search";
-          "{bd6be57d-91d7-41d2-b61d-3ba20f7942e5}" = "kagi-translate";
-          "privacypass@kagi.com" = "kagi-privacy-pass";
+          # "search@kagi.com" = "kagi-search";
+          # "{bd6be57d-91d7-41d2-b61d-3ba20f7942e5}" = "kagi-translate";
+          # "privacypass@kagi.com" = "kagi-privacy-pass";
         };
         Preferences = mkLockedAttrs {
           "browser.tabs.warnOnClose" = false;
@@ -246,9 +246,9 @@
 
         search = {
           force = true;
-          default = "Kagi";
+          default = "ddg";
           order = [
-            "Kagi"
+            # "Kagi"
             "NixOS Wiki"
             "Nix Packages"
             "Nix Options"
@@ -376,22 +376,22 @@
                 ];
               };
 
-              Kagi = {
-                urls = [
-                  {
-                    template = "https://kagi.com/search?q={searchTerms}";
-                  }
-                ];
-                suggestUrls = [
-                  { template = "https://kagi.com/api/autosuggest?q={searchTerms}"; }
-                ];
-                icon = "https://assets.kagi.com/v2/favicon-32x32.png";
-                definedAliases = [
-                  "kg"
-                  "@kg"
-                  "@kagi"
-                ];
-              };
+              # Kagi = {
+              #   urls = [
+              #     {
+              #       template = "https://kagi.com/search?q={searchTerms}";
+              #     }
+              #   ];
+              #   suggestUrls = [
+              #     { template = "https://kagi.com/api/autosuggest?q={searchTerms}"; }
+              #   ];
+              #   icon = "https://assets.kagi.com/v2/favicon-32x32.png";
+              #   definedAliases = [
+              #     "kg"
+              #     "@kg"
+              #     "@kagi"
+              #   ];
+              # };
 
               # Hide Bing from the UI
               bing.metaData.hidden = "true";

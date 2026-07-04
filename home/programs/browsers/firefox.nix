@@ -16,14 +16,14 @@
 
         extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
           #          bitwarden
-          # proton-pass
+          proton-pass
           darkreader
           sponsorblock
           ublock-origin
           onepassword-password-manager
           # kagi-privacy-pass
-          kagi-search
-          kagi-translate
+          # kagi-search
+          # kagi-translate
         ];
 
         settings = {
@@ -143,9 +143,9 @@
 
         search = {
           force = true;
-          default = "Kagi";
+          default = "ddg";
           order = [
-            "Kagi"
+            # "Kagi"
             "searxng"
             "nix-packages"
             "nixos-wiki"
@@ -202,17 +202,17 @@
               definedAliases = [ "@ddg" ];
             };
 
-            Kagi = {
-              urls = [
-                { template = "https://kagi.com/search?q={searchTerms}"; }
-              ];
-              # icon = "https://kagi.com/favicon.ico";
-              icon = "https://assets.kagi.com/v2/favicon-32x32.png";
-              definedAliases = [
-                "@kg"
-                "@kagi"
-              ];
-            };
+            # Kagi = {
+            #   urls = [
+            #     { template = "https://kagi.com/search?q={searchTerms}"; }
+            #   ];
+            #   # icon = "https://kagi.com/favicon.ico";
+            #   icon = "https://assets.kagi.com/v2/favicon-32x32.png";
+            #   definedAliases = [
+            #     "@kg"
+            #     "@kagi"
+            #   ];
+            # };
 
             # Hide Bing from the UI
             bing.metaData.hidden = true;
