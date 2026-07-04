@@ -7,12 +7,12 @@
 let
   apps = import ./applications.nix { inherit pkgs; };
 
+  # Run `noctalia msg --help` to see available commands, use `less` to search output
   noctalia =
     cmd:
     [
-      "noctalia-shell"
-      "ipc"
-      "call"
+      "noctalia"
+      "msg"
     ]
     ++ (pkgs.lib.splitString " " cmd);
 in
@@ -21,28 +21,34 @@ in
     # Prevent programs from blocking key presses
     "Mod+Escape".action.toggle-keyboard-shortcuts-inhibit = [ ];
 
+    # Turn off all displays
+    "Mod+Shift+P".action.power-off-monitors = [ ];
+
+    # Quit Niri
+    "Control+Alt+Delete".action.quit = [ ];
+
     # Volume
-    "XF86AudioRaiseVolume".action.spawn = noctalia "volume increase"; # output increase
-    "XF86AudioLowerVolume".action.spawn = noctalia "volume decrease"; # output decrease
-    "XF86AudioMute".action.spawn = noctalia "volume muteOutput"; # output mute
-    "Shift+XF86AudioRaiseVolume".action.spawn = noctalia "volume increaseInput"; # input increase
-    "Shift+XF86AudioLowerVolume".action.spawn = noctalia "volume decreaseInput"; # input decrease
-    "Shift+XF86AudioMute".action.spawn = noctalia "volume muteInput"; # input mute
-    "Mod+W".action.spawn = noctalia "volume muteInput"; # input mute alternate
-    "Control+XF86AudioMute".action.spawn = noctalia "volume togglePanel"; # open volume panel
+    "XF86AudioRaiseVolume".action.spawn = noctalia "volume-up"; # output increase
+    "XF86AudioLowerVolume".action.spawn = noctalia "volume-down"; # output decrease
+    "XF86AudioMute".action.spawn = noctalia "volume-mute"; # output mute
+    "Shift+XF86AudioRaiseVolume".action.spawn = noctalia "mic-volume-up"; # input increase
+    "Shift+XF86AudioLowerVolume".action.spawn = noctalia "mic-volume-down"; # input decrease
+    "Shift+XF86AudioMute".action.spawn = noctalia "mic-volume-mute"; # input mute
+    "Mod+W".action.spawn = noctalia "mic-volume-mute"; # input mute alternate
+    "Control+XF86AudioMute".action.spawn = noctalia "panel-toggle control-center audio"; # open volume panel
 
     # Media
-    "XF86AudioPlay".action.spawn = noctalia "media playPause";
+    "XF86AudioPlay".action.spawn = noctalia "media toggle";
     "XF86AudioNext".action.spawn = noctalia "media next";
     "XF86AudioPrev".action.spawn = noctalia "media previous";
 
-    "Mod+Space".action.spawn = noctalia "launcher toggle";
+    "Mod+Space".action.spawn = noctalia "panel-toggle launcher";
     "Mod+Q".action = close-window;
     "Mod+B".action = spawn apps.browser;
     "Mod+Return".action = spawn apps.terminal;
     #    "Mod+Space".action = spawn apps.appLauncher;
     "Mod+E".action = spawn apps.fileManager;
-    "Mod+L".action.spawn = noctalia "lockScreen lock";
+    "Mod+L".action.spawn = noctalia "session lock";
 
     # Tested with ghostty and kitty
     # "Mod+M".action = spawn apps.terminal [
