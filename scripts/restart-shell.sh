@@ -2,14 +2,16 @@
 
 # Method with common commands
 #   Searches all processes, removes grep from list, gets pid, passes to kill
-#ps aux | grep noctalia-shell | grep -v grep | awk {'print $2'} | xargs kill
+#ps aux | grep noctalia | grep -v grep | awk {'print $2'} | xargs kill
 
 # Much nicer method
 #   Returns pid and passes to `kill`
-# pgrep -f noctalia-shell | xargs kill
-pgrep -f .quickshell | xargs kill
+# pgrep -f noctalia | xargs kill
+pgrep -f noctalia | xargs kill
 
-# Start noctalia-shell in background
+sleep .5s
+
+# Start noctalia in background
 #   Redirects stdout to /dev/null, and stderr to stdout
 #   (prevents printing in terminal)
-noctalia-shell > /dev/null 2>&1 &
+noctalia > /dev/null 2>&1 &
