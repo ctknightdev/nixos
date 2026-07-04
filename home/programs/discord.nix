@@ -43,12 +43,12 @@
         betterSettings.enable = true; # enhances settings menu with categories and faster loading
         betterUploadButton.enable = true; # upload files with a single click, right click for menu
         biggerStreamPreview.enable = true; # allows enlarging stream previews
-        BlurNSFW.enable = true; # blurs attachments in NSFW channels until hovered
+        blurNsfw.enable = true; # blurs attachments in NSFW channels until hovered
         callTimer = {
           enable = true; # adds call timers for all users in voice channels
           format = "human"; # human = "30d 23h 00m 42s", stopwatch = "30:23:00:42"
         };
-        ClearURLs.enable = true; # removes tracking elements from URLs sent
+        clearUrls.enable = true; # removes tracking elements from URLs sent
         colorSighted.enable = true; # removes colorblind-friendly icons from statuses
         consoleJanitor.enable = true; # disables annoying messages/errors in console
         consoleShortcuts.enable = true; # adds aliases for many console actions. Run `shortcutList` for a list
@@ -59,9 +59,9 @@
         # };
         copyEmojiMarkdown.enable = true; # copies unicode character instead of discord name for emojis
         copyFileContents.enable = true; # adds button to copy text file contents
-        CopyUserURLs.enable = true; # adds context option to copy URL to user
+        copyUserUrls.enable = true; # adds context option to copy URL to user
         customCommands.enable = true; # create and use custom slash commands / tags
-        CustomRPC = {
+        customRpc = {
           enable = false; # TODO
         };
         dearrow.enable = true; # makes youtube embed titles and images less clickbaity
@@ -82,7 +82,6 @@
         fixYoutubeEmbeds.enable = true; # bypasses youtube videos that are blocked from playing in discord
         forceOwnerCrown.enable = true; # places owner crown next to owner's username
         friendInvites.enable = true; # adds slash commands for friend invites
-        friendsSince.enable = true; # shows date in popout that users became friends
         fullSearchContext.enable = true; # adds more options in message context menu searching
         gameActivityToggle.enable = true; # adds toggle in bottom left for game activity
         gifPaste.enable = true; # picking a gif inserts a link in messages instead of instantly sending
@@ -126,7 +125,7 @@
         permissionsViewer.enable = true; # view permissions a user or channel has
         petpet.enable = true; # adds command to create headpet gifs from images
         pictureInPicture.enable = true; # adds PIP to videos
-        PinDMs.enable = true; # allows pinning private channels to top of DMs
+        pinDms.enable = true; # allows pinning private channels to top of DMs
         platformIndicators.enable = true; # adds indicators for user on mobile / desktop / web
         previewMessage.enable = true; # allows previewing messages
         quickMention.enable = true; # adds quick mention button on message hover
