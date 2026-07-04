@@ -3,6 +3,7 @@
   inputs,
   config,
   self,
+  lib,
   ...
 }:
 
@@ -88,7 +89,7 @@ in
   #   # };
   # };
 
-  gtk.gtk4.theme = config.gtk.theme;
+  gtk.gtk4.theme = lib.mkForce config.gtk.theme;
 
   # qt = {
   #   enable = true;
