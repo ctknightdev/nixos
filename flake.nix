@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     hyprpolkitagent.url = "github:hyprwm/hyprpolkitagent";
     nur.url = "github:nix-community/NUR";
     home-manager.url = "github:nix-community/home-manager";
@@ -86,7 +85,6 @@
     {
       self,
       nixpkgs,
-      chaotic,
       nix-citizen,
       ...
     }@inputs:
@@ -101,7 +99,6 @@
           inputs.stylix.nixosModules.stylix
           inputs.home-manager.nixosModules.default
           # inputs.agenix.nixosModules.default
-          chaotic.nixosModules.default
           inputs.disko.nixosModules.disko
 
           nix-citizen.nixosModules.default
