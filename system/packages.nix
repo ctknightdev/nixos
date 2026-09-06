@@ -41,8 +41,6 @@
     #    alvr
     ffmpeg
     mesa
-    lsfg-vk
-    lsfg-vk-ui
     libva # VA-API implementation
     libva-utils
     playerctl # Media player control
@@ -57,9 +55,10 @@
     base16-schemes # Themeing
     ddcutil
     localsend # AirDrop alternative
-    inputs.nixmate.packages.${stdenv.hostPlatform.system}.default # NixOS TUI helper
+    # inputs.nixmate.packages.${stdenv.hostPlatform.system}.default # NixOS TUI helper
     inputs.hyprpolkitagent.packages.${stdenv.hostPlatform.system}.default
     libXtst
+    inputs.lsfg-vk.packages.${stdenv.hostPlatform.system}.default # Lossless Scaling Frame Generation
 
     # Connect to iPhone over USB
     usbmuxd

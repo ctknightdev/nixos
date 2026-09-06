@@ -23,6 +23,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    lsfg-vk = {
+        url = "github:Daaboulex/lsfg-vk-nix";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+
     matcha = {
       url = "github:floatpane/matcha";
       # inputs.nixpkgs.follows = "nixpkgs";
