@@ -31,12 +31,12 @@ in
     programs.waywall = {
       width = lib.mkOption {
         type = lib.types.int;
-        default = 3840;
+        default = 2560;
       };
 
       height = lib.mkOption {
         type = lib.types.int;
-        default = 1600;
+        default = 1440;
       };
     };
   };
