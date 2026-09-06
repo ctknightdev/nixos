@@ -7,9 +7,9 @@
 
 let
   amethyst = pkgs.callPackage "${self}/pkgs/amethyst.nix" { };
-  jackify = pkgs.callPackage "${self}/pkgs/jackify.nix" { };
-  iloader = pkgs.callPackage "${self}/pkgs/iloader.nix" { };
   helium = pkgs.callPackage "${self}/pkgs/helium.nix" { };
+  iloader = pkgs.callPackage "${self}/pkgs/iloader.nix" { };
+  proton-drive-cli = pkgs.callPackage "${self}/pkgs/proton-drive-cli.nix" { };
 in
 with pkgs;
 [
@@ -32,7 +32,6 @@ with pkgs;
   # winetricks
   mono
   sc-controller
-  jackify # Linux Wabbajack modding client
   amethyst # Linux modding client
   helium # Chromium-based browser
   minion # ESO modding tool
@@ -96,17 +95,18 @@ with pkgs;
   dysk # Better disk space analyzer
   solaar # control hardware devices
   evhz # measure mouse polling rates
+  proton-drive-cli # Interact with Proton Drive
 
   # Charm apps (https://charm.land/apps)
   vhs # turn commands into gifs
   glow # TUI markdown reader
 
   # For SteamTinkerLaunch (install with protonplus)
-  xxd
-  xdotool
-  xwininfo
-  yad
-  steamtinkerlaunch
+  # xxd
+  # xdotool
+  # xwininfo
+  # yad
+  # steamtinkerlaunch
 
   # Niri
   xwayland-satellite

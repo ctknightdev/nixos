@@ -31,7 +31,6 @@ This repository contains my personal NixOS configuration for a customized deskto
 
 - **`pkgs/`** 📦
   Custom packages not in nixpkgs or flakes
-  - **`jackify.nix`**: Mod manager that uses Wabbjack modlists and downloads from Nexus
 
 - **`scripts/`** ⚙️
   Custom scripts to make system management a little easier
