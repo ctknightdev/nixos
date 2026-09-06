@@ -75,7 +75,6 @@
         # f8Break.enable = true; # pause client when pressing F8 with devtools and breakpoints
         fakeProfileThemes.enable = true; # allows profile themeing by using invisible encoding in bio
         favoriteEmojiFirst.enable = true; # moves favorite emojis first in autocomplete
-        favoriteGifSearch.enable = true; # adds search bar to favorite gifs
         fixCodeblockGap.enable = true; # removes gap between codeblocks and text below it
         fixImagesQuality.enable = true; # loads images at their original resolution
         fixSpotifyEmbeds.enable = true; # allows customizing volume of spotify embeds
@@ -144,10 +143,10 @@
         shikiCodeblocks = {
           enable = true; # enables vscode-style codeblocks
           # Themes for code blocks
-          theme = "https://raw.githubusercontent.com/shikijs/textmate-grammars-themes/bc5436518111d87ea58eb56d97b3f9bec30e6b83/packages/tm-themes/themes/catppuccin-mocha.json";
-          # theme = "https://raw.githubusercontent.com/shikijs/textmate-grammars-themes/bc5436518111d87ea58eb56d97b3f9bec30e6b83/packages/tm-themes/themes/catppuccin-macchiato.json";
-          # theme = "https://raw.githubusercontent.com/shikijs/textmate-grammars-themes/bc5436518111d87ea58eb56d97b3f9bec30e6b83/packages/tm-themes/themes/catppuccin-frappe.json";
-          # theme = "https://raw.githubusercontent.com/shikijs/textmate-grammars-themes/bc5436518111d87ea58eb56d97b3f9bec30e6b83/packages/tm-themes/themes/catppuccin-latte.json";
+          theme = "https://cdn.jsdelivr.net/gh/shikijs/textmate-grammars-themes@bc5436518111d87ea58eb56d97b3f9bec30e6b83/packages/tm-themes/themes/catppuccin-mocha.json";
+          # theme = "https://cdn.jsdelivr.net/gh/shikijs/textmate-grammars-themes@bc5436518111d87ea58eb56d97b3f9bec30e6b83/packages/tm-themes/themes/catppuccin-macchiato.json";
+          # theme = "https://cdn.jsdelivr.net/gh/shikijs/textmate-grammars-themes@bc5436518111d87ea58eb56d97b3f9bec30e6b83/packages/tm-themes/themes/catppuccin-frappe.json";
+          # theme = "https://cdn.jsdelivr.net/gh/shikijs/textmate-grammars-themes@bc5436518111d87ea58eb56d97b3f9bec30e6b83/packages/tm-themes/themes/catppuccin-latte.json";
           useDevIcon = "COLOR"; # sets language icon to be colored or not, options "DISABLED" "GREYSCALE" "COLOR"
         };
         showAllMessageButtons.enable = true; # show all message actions if holding shift or not
