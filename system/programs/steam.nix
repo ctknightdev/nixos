@@ -11,6 +11,8 @@
       with pkgs;
       steam.override {
         extraPkgs = pkgs: [
+          gamemode
+
           # Extra packages added for FAF - Forged Alliance Forever
           jq
           cabextract
