@@ -13,6 +13,7 @@
     ./disk-config.nix
     # ./disk-games.nix
     # ./disk-data.nix
+    "${self}/home/programs/sway.nix"
     "${self}/system/greeter/greetd.nix"
     "${self}/system/programs/1password.nix"
     "${self}/system/programs/lact.nix"
@@ -42,7 +43,6 @@
   ];
 
   hjem = {
-    linker = inputs.hjem.packages.${pkgs.stdenv.hostPlatform.system}.smfh;
     clobberByDefault = true;
   };
 
@@ -51,10 +51,6 @@
       nur = import inputs.nur {
         nurpkgs = prev;
         pkgs = prev;
-      };
-
-      openldap = prev.openldap.overrideAttrs {
-        doCheck = !prev.stdenv.hostPlatform.isi686;
       };
     })
   ];
@@ -73,6 +69,7 @@
       "plugdev"
       "i2c"
       "bluetooth"
+      "kvm"
     ];
   };
 
@@ -210,6 +207,13 @@
       wifi.backend = "wpa_supplicant";
       wifi.powersave = false;
     };
+
+    # Blocks battleye servers for GTA Online
+    extraHosts = ''
+      0.0.0.0 paradise-s1.battleye.com
+      0.0.0.0 test-s1.battleye.com
+      0.0.0.0 paradiseenhanced-s1.battleye.com
+    '';
   };
 
   hardware.enableRedistributableFirmware = true;
