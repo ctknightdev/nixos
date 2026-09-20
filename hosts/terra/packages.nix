@@ -9,7 +9,7 @@ let
   amethyst = pkgs.callPackage "${self}/pkgs/amethyst.nix" { };
   helium = pkgs.callPackage "${self}/pkgs/helium.nix" { };
   iloader = pkgs.callPackage "${self}/pkgs/iloader.nix" { };
-  proton-drive-cli = pkgs.callPackage "${self}/pkgs/proton-drive-cli.nix" { };
+  # proton-drive-cli = pkgs.callPackage "${self}/pkgs/proton-drive-cli.nix" { };
 in
 with pkgs;
 [
@@ -34,7 +34,7 @@ with pkgs;
   sc-controller
   amethyst # Linux modding client
   helium # Chromium-based browser
-  minion # ESO modding tool
+  # minion # ESO modding tool
 
   # Games
   iw4x-launcher
@@ -95,7 +95,7 @@ with pkgs;
   dysk # Better disk space analyzer
   solaar # control hardware devices
   evhz # measure mouse polling rates
-  proton-drive-cli # Interact with Proton Drive
+  # proton-drive-cli # Interact with Proton Drive
 
   # Charm apps (https://charm.land/apps)
   vhs # turn commands into gifs
