@@ -14,7 +14,7 @@
       extensions = with pkgs.vscode-extensions; [
         alefragnani.project-manager
         #astro-build.astro-vscode
-        leonardssh.vscord
+        # leonardssh.vscord
         #bradlc.vscode-tailwindcss
         #christian-kohler.npm-intellisense
         christian-kohler.path-intellisense
@@ -27,7 +27,7 @@
         #golang.go
         jnoortheen.nix-ide
         #meganrogge.template-string-converter
-        mikestead.dotenv
+        # mikestead.dotenv
         mkhl.direnv
         ms-azuretools.vscode-docker
         naumovs.color-highlight
