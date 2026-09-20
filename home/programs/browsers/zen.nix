@@ -94,7 +94,7 @@
           "addon@darkreader.org" = "darkreader";
           "78272b6fa58f4a1abaac99321d503a20@proton.me" = "proton-pass";
           "sponsorBlocker@ajay.app" = "sponsorblock";
-          "{d634138d-c276-4fc8-924b-40a0ea21d284}" = "1password-x-password-manager";
+          # "{d634138d-c276-4fc8-924b-40a0ea21d284}" = "1password-x-password-manager";
           # "{446900e4-71c2-419f-a6a7-df9c091e268b}" = "bitwarden";
           # "search@kagi.com" = "kagi-search";
           # "{bd6be57d-91d7-41d2-b61d-3ba20f7942e5}" = "kagi-translate";

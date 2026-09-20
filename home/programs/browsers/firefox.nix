@@ -20,7 +20,7 @@
           darkreader
           sponsorblock
           ublock-origin
-          onepassword-password-manager
+          # onepassword-password-manager
           # kagi-privacy-pass
           # kagi-search
           # kagi-translate
