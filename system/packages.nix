@@ -55,7 +55,6 @@
     base16-schemes # Themeing
     ddcutil
     localsend # AirDrop alternative
-    # inputs.nixmate.packages.${stdenv.hostPlatform.system}.default # NixOS TUI helper
     inputs.hyprpolkitagent.packages.${stdenv.hostPlatform.system}.default
     libXtst
     inputs.lsfg-vk.packages.${stdenv.hostPlatform.system}.default # Lossless Scaling Frame Generation
