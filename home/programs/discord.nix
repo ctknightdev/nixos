@@ -137,7 +137,6 @@
         revealAllSpoilers.enable = true; # reveals all spoilers by control clicking one, or control shift click for all
         reverseImageSearch.enable = true; # adds image searching to context menu of images
         roleColorEverywhere.enable = true; # adds top role color everywhere possible
-        summaries.enable = true; # enables experimental AI chat summaries on servers
         sendTimestamps.enable = true; # adds button to send timestamps in chat
         serverInfo.enable = true; # displays extra info about servers
         shikiCodeblocks = {
