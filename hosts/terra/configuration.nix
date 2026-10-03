@@ -18,7 +18,7 @@
     "${self}/system/programs/1password.nix"
     "${self}/system/programs/lact.nix"
     "${self}/system/programs/minecraft.nix"
-    "${self}/system/programs/nix-ld.nix"
+    "${self}/system/programs/ld.nix"
     "${self}/system/programs/obs.nix"
     "${self}/system/programs/steam.nix"
     "${self}/system/programs/stylix.nix"
