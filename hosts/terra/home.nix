@@ -28,7 +28,6 @@ in
 
     "${self}/home/programs/gamedev/godot.nix"
     "${self}/home/programs/gamedev/unity.nix"
-    # "${self}/home/programs/games/bakkesmod.nix"
     "${self}/home/programs/terminal/alacritty.nix"
     "${self}/home/programs/terminal/ghostty.nix"
     "${self}/home/programs/terminal/nushell.nix"
