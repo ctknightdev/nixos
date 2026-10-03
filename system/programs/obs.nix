@@ -9,7 +9,6 @@
     enableVirtualCamera = true;
     plugins = with pkgs.obs-studio-plugins; [
       droidcam-obs
-      obs-composite-blur
       wlrobs
       obs-backgroundremoval
       obs-pipewire-audio-capture
