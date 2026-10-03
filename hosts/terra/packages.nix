@@ -17,7 +17,6 @@ with pkgs;
   protonplus
   lutris
   heroic
-  # prismlauncher
   nautilus
   file-roller
   termius
