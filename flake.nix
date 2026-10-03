@@ -3,61 +3,72 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    hyprpolkitagent.url = "github:hyprwm/hyprpolkitagent";
-    nur.url = "github:nix-community/NUR";
-    home-manager.url = "github:nix-community/home-manager";
-    nixvim.url = "github:nix-community/nixvim";
-    agenix.url = "github:ryantm/agenix";
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
+    agenix.url = "github:ryantm/agenix";
     disko = {
       url = "github:nix-community/disko/latest";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     hjem = {
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    hyprpolkitagent = {
+      url = "github:hyprwm/hyprpolkitagent";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     lsfg-vk = {
-        url = "github:Daaboulex/lsfg-vk-nix";
-        inputs.nixpkgs.follows = "nixpkgs";
-      };
-
-    niri.url = "github:sodiboo/niri-flake";
-
+      url = "github:Daaboulex/lsfg-vk-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     mcsr-nixos = {
       url = "https://git.uku3lig.net/uku/mcsr-nixos/archive/main.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    stylix = {
-      url = "github:danth/stylix";
+    niri = {
+      url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     nix-alien.url = "github:thiagokokada/nix-alien";
-
-    nixcord.url = "github:4evy/nixcord";
-
+    nix-citizen.url = "github:LovingMelody/nix-citizen";
+    nix-gaming.url = "github:fufexan/nix-gaming";
+    nix-minecraft = {
+      url = "github:Infinidoge/nix-minecraft";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixcord = {
+      url = "github:4evy/nixcord";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixflix = {
       url = "github:kiriwalawren/nixflix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
-
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     noctalia = {
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    xremap-flake.url = "github:xremap/nix-flake";
-
+    nur.url = "github:nix-community/NUR";
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    xremap-flake = {
+      url = "github:xremap/nix-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs = {
@@ -65,12 +76,6 @@
         home-manager.follows = "home-manager";
       };
     };
-
-    nix-gaming.url = "github:fufexan/nix-gaming";
-
-    # Star Citizen
-    nix-citizen.url = "github:LovingMelody/nix-citizen";
-
   };
 
   outputs =
