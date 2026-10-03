@@ -28,12 +28,6 @@
         inputs.nixpkgs.follows = "nixpkgs";
       };
 
-    matcha = {
-      url = "github:floatpane/matcha";
-      # inputs.nixpkgs.follows = "nixpkgs";
-    };
-    matugen.url = "github:InioX/matugen";
-
     niri.url = "github:sodiboo/niri-flake";
 
     mcsr-nixos = {
@@ -48,8 +42,6 @@
 
     nixcord.url = "github:4evy/nixcord";
 
-    nixmate.url = "github:daskladas/nixmate";
-
     nixflix = {
       url = "github:kiriwalawren/nixflix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -61,13 +53,6 @@
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    moonlight = {
-      url = "github:moonlight-mod/moonlight";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    bakkesmod-nix.url = "github:AddG0/bakkesmod-nix";
 
     xremap-flake.url = "github:xremap/nix-flake";
 
