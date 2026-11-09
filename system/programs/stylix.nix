@@ -15,6 +15,8 @@
     #  stylix.base16Scheme = toString (builtins.path {
     #    path = ${self}/assets/themes/base-16/oled-lavender.yaml;
     #  });
+
+    targets.gtksourceview.enable = false;
   };
 
   environment.variables = {
