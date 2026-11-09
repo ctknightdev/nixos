@@ -70,7 +70,6 @@
       libGLU
 
       ## Misc. desktop
-      libpng12
       libjpeg
       fontconfig
       freetype
@@ -80,7 +79,6 @@
       atk
 
       ## GTK+ Stack Libraries
-      gtk2
       gdk-pixbuf
       glib
       dbus-glib
