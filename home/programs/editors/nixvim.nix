@@ -4,7 +4,7 @@
 
 {
   programs.nixvim = {
-    enable = false;
+    enable = true;
     viAlias = true;
     vimAlias = true;
 
@@ -35,15 +35,11 @@
         openOnSetup = true;
 
         settings = {
-          disableNetrw = true;
-          hijackNetrw = true;
-          updateFocusedFile.enable = true;
           view = {
             width = 30;
             side = "left";
           };
           renderer = {
-            highlightGit = true;
             icons.show.file = true;
             icons.show.folder = true;
           };
@@ -59,7 +55,7 @@
       };
 
       presence = {
-        enable = true;
+        enable = false;
         settings = {
           enableLineNumber = true;
           autoUpdate = true;
