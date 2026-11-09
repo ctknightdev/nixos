@@ -89,7 +89,7 @@
     };
 
     lidarr = {
-      enable = true;
+      enable = false;
       subdomain = "music";
       config = {
         apiKey = {
@@ -199,7 +199,7 @@
             AddTorrentStopped = false;
             Interface = "proton0";
             InterfaceName = "proton0";
-            Port = 58198;
+            Port = 53279;
             QueueingSystemEnabled = true;
             SSL.Port = 32380;
 
