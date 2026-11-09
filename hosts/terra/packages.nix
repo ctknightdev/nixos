@@ -7,7 +7,6 @@
 
 let
   amethyst = pkgs.callPackage "${self}/pkgs/amethyst.nix" { };
-  helium = pkgs.callPackage "${self}/pkgs/helium.nix" { };
   iloader = pkgs.callPackage "${self}/pkgs/iloader.nix" { };
   # proton-drive-cli = pkgs.callPackage "${self}/pkgs/proton-drive-cli.nix" { };
 in
@@ -32,11 +31,10 @@ with pkgs;
   mono
   sc-controller
   amethyst # Linux modding client
-  helium # Chromium-based browser
   # minion # ESO modding tool
 
   # Games
-  iw4x-launcher
+  # iw4x-launcher
   starsector
   # inputs.nix-gaming.packages.${stdenv.hostPlatform.system}.faf-client
   beyond-all-reason
@@ -72,7 +70,6 @@ with pkgs;
   iloader # tool to sideload .ipa  on apple devices
 
   # Utilities
-  neovim
   jq
   socat
   tree
